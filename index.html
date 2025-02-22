@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的第一个网站</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        button {
+            padding: 10px 20px;
+            background: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>欢迎来到我的网站！🎉</h1>
+        <p>这是一个响应式网站示例，可在手机/电脑上自动适配</p>
+        <button onclick="showMessage()">点击这里</button>
+        <p id="demo"></p>
+    </div>
+
+    <script>
+        function showMessage() {
+            document.getElementById("demo").innerHTML = "你好！今天是 " + new Date().toLocaleDateString();
+        }
+    </script>
+</body>
+</html>
